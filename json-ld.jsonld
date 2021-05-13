@@ -1,0 +1,102 @@
+{
+    "@context": {
+	"ch": "https://n-harley.github.io/chakra-ontology/",
+	"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+	"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+	"owl": "http://www.w3.org/2002/07/owl#",
+	"defines": { "@reverse": "rdfs:isDefinedBy" },
+	"rdfs:domain": {"@type":"@id"},
+	"rdfs:range": {"@type":"@id"},
+	"subClassOf": {"@id":"rdfs:subClassOf","@type":"@id"}
+    },
+    "@id": "ch:",
+    "@type": "owl:Ontology",
+    "defines": [{
+	"@id": "ch:Structure",
+	"@type": "owl:Class"
+    },{
+	"@id": "ch:Constituent",
+	"@type": "owl:Class"
+    },{
+	"@id": "ch:Association",
+	"@type": "owl:Class"
+    },{
+	"@id": "ch:Attribute",
+	"@type": "owl:Class"
+    },{
+	"@id": "ch:Aspect",
+	"@type": "owl:Class"
+    },{
+	"@id": "ch:Value",
+	"@type": "owl:Class"
+    },{
+	"@id": "ch:Type",
+	"@type": "owl:Class"
+    },{
+	"@id": "ch:Property",
+	"@type": "owl:Class"
+    },{
+	"@id": "ch:contains",
+	"@type": "owl:ObjectProperty",
+	"rdfs:domain": "ch:Structure",
+	"range": {
+	    "owl:unionOf": {
+		"@list": ["ch:Constituent","ch:Association"]
+	    }
+	}
+    },{
+	"@id": "ch:hasPart",
+	"@type": "owl:ObjectProperty",
+	"rdfs:domain": "ch:Constituent",
+	"range": "ch:Constituent"
+    },{
+	"@id": "ch:isPartOf",
+	"@type": "owl:ObjectProperty",
+	"rdfs:domain": "ch:Constituent",
+	"range": "ch:Constituent",
+	"owl:inverseOf": "ch:hasPart"
+    },{
+	"@id": "ch:hasSource",
+	"@type": "owl:ObjectProperty",
+	"rdfs:domain": "ch:Association",
+	"range": "ch:Constituent"
+    },{
+	"@id": "ch:hasTarget",
+	"@type": "owl:ObjectProperty",
+	"rdfs:domain": "ch:Association",
+	"range": "ch:Constituent"
+    },{
+	"@id": "ch:hasAttribute",
+	"@type": "owl:ObjectProperty",
+	"rdfs:domain": {
+	    "owl:unionOf": {
+		"@list": ["ch:Constituent","ch:Association"]
+	    }
+	},
+	"range": "ch:Attribute"
+    },{
+	"@id": "ch:hasProperty",
+	"@type": "owl:ObjectProperty",
+	"rdfs:domain": {
+	    "owl:unionOf": {
+		"@list": ["ch:Constituent","ch:Association"]
+	    }
+	},
+	"rdfs:range": "ch:Property"
+    },{
+	"@id": "ch:attributeName",
+	"@type": "owl:ObjectProperty",
+	"rdfs:domain": "ch:Attribute",
+	"rdfs:range": "ch:Aspect"
+    },{
+	"@id": "ch:attributeValue",
+	"@type": "owl:ObjectProperty",
+	"rdfs:domain": "ch:Attribute",
+	"rdfs:range": "ch:Value"
+    },{
+	"@id": "ch:hasType",
+	"@type": "owl:ObjectProperty",
+	"rdfs:domain": "ch:Value",
+	"rdfs:range": "ch:Type"
+    }]
+}
