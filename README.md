@@ -2,7 +2,7 @@
 
 #### Common Hierarchical Abstract Knowledge Representation of Anything
 
-[Classes](#Classes)
+[Constituent](#Constituent)
 
 namespace: <https://n-harley.github.io/chakra-ontology/>
 
