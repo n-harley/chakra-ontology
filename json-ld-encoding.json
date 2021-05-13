@@ -12,55 +12,55 @@
     "@id": "chakra:",
     "@type": "owl:Ontology",
     "defines": [{
-	"@id": "ch:Constituent",
+	"@id": "chakra:Constituent",
 	"@type": "owl:Class"
     },{
-	"@id": "ch:Association",
+	"@id": "chakra:Association",
 	"@type": "owl:Class"
     },{
-	"@id": "ch:Attribute",
+	"@id": "chakra:Attribute",
 	"@type": "owl:Class"
     },{
-	"@id": "ch:Property",
+	"@id": "chakra:Property",
 	"@type": "owl:Class"
     },{
-	"@id": "ch:hasPart",
+	"@id": "chakra:hasPart",
 	"@type": "owl:ObjectProperty",
-	"rdfs:domain": "ch:Constituent",
-	"range": "ch:Constituent"
+	"rdfs:domain": "chakra:Constituent",
+	"range": "chakra:Constituent"
     },{
-	"@id": "ch:isPartOf",
+	"@id": "chakra:isPartOf",
 	"@type": "owl:ObjectProperty",
-	"rdfs:domain": "ch:Constituent",
-	"range": "ch:Constituent",
-	"owl:inverseOf": "ch:hasPart"
+	"rdfs:domain": "chakra:Constituent",
+	"range": "chakra:Constituent",
+	"owl:inverseOf": "chakra:hasPart"
     },{
-	"@id": "ch:hasSource",
+	"@id": "chakra:hasSource",
 	"@type": "owl:ObjectProperty",
-	"rdfs:domain": "ch:Association",
-	"range": "ch:Constituent"
+	"rdfs:domain": "chakra:Association",
+	"range": "chakra:Constituent"
     },{
-	"@id": "ch:hasTarget",
+	"@id": "chakra:hasTarget",
 	"@type": "owl:ObjectProperty",
-	"rdfs:domain": "ch:Association",
-	"range": "ch:Constituent"
+	"rdfs:domain": "chakra:Association",
+	"range": "chakra:Constituent"
     },{
-	"@id": "ch:hasAttribute",
+	"@id": "chakra:hasAttribute",
 	"@type": "owl:ObjectProperty",
 	"rdfs:domain": {
 	    "owl:unionOf": {
-		"@list": ["ch:Constituent","ch:Association"]
+		"@list": ["chakra:Constituent","chakra:Association"]
 	    }
 	},
-	"range": "ch:Attribute"
+	"range": "chakra:Attribute"
     },{
-	"@id": "ch:hasProperty",
+	"@id": "chakra:hasProperty",
 	"@type": "owl:ObjectProperty",
 	"rdfs:domain": {
 	    "owl:unionOf": {
-		"@list": ["ch:Constituent","ch:Association"]
+		"@list": ["chakra:Constituent","chakra:Association"]
 	    }
 	},
-	"rdfs:range": "ch:Property"
+	"rdfs:range": "chakra:Property"
     }]
 }
