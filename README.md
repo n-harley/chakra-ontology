@@ -12,7 +12,7 @@ jsonld: [https://n-harley.github.io/chakra-ontology/jsonld](./jsonld)
 
 #### Constituent
 
-`[ckr:Constituent](https://n-harley.github.io/chakra-ontology/#Constituent)`
+[ckr:Constituent](https://n-harley.github.io/chakra-ontology/#Constituent)
 
 #### Association
 
