@@ -5,7 +5,7 @@
 ## Details
 
 namespace: <https://n-harley.github.io/chakra-ontology/>
-prefix: <ckr:>
+prefix: chakra
 
 jsonld: [https://n-harley.github.io/chakra-ontology/jsonld](./jsonld)
 
@@ -13,24 +13,38 @@ jsonld: [https://n-harley.github.io/chakra-ontology/jsonld](./jsonld)
 
 #### Constituent
 
-<[ckr:Constituent](https://n-harley.github.io/chakra-ontology/#Constituent)>
+<[chakra:Constituent](https://n-harley.github.io/chakra-ontology/#Constituent)>
 
 #### Association
 
-[ckr:Association](https://n-harley.github.io/chakra-ontology/#Association)
+[chakra:Association](https://n-harley.github.io/chakra-ontology/#Association)
 
 #### Attribute
 
-[ckr:Attribute](https://n-harley.github.io/chakra-ontology/#Attribute)
+[chakra:Attribute](https://n-harley.github.io/chakra-ontology/#Attribute)
 
 #### Property
 
-[ckr:Property](https://n-harley.github.io/chakra-ontology/#Property)
+[chakra:Property](https://n-harley.github.io/chakra-ontology/#Property)
 
 ## Object Properties
 
 #### hasAttribute
+
+[chakra:hasAttribute](https://n-harley.github.io/chakra-ontology/#hasAttribute)
+
 #### hasProperty
+
+[chakra:hasProperty](https://n-harley.github.io/chakra-ontology/#hasProperty)
+
 #### hasPart
+
+[chakra:hasPart](https://n-harley.github.io/chakra-ontology/#hasPart)
+
 #### hasSource
+
+[chakra:hasSource](https://n-harley.github.io/chakra-ontology/#hasSource)
+
 #### hasTarget
+
+[chakra:hasTarget](https://n-harley.github.io/chakra-ontology/#hasTarget)
