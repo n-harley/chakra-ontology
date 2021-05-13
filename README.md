@@ -2,19 +2,26 @@
 
 #### Common Hierarchical Abstract Knowledge Representation of Anything
 
-[Constituent](#Constituent)
-
 namespace: <https://n-harley.github.io/chakra-ontology/>
 
-prefix: `chakra`
+prefix: `ckr:`
 
 jsonld: [https://n-harley.github.io/chakra-ontology/jsonld](./jsonld)
 
 ## Classes
 
-### Constituent
-### Association
-### Attribute
+#### Constituent
+
+`[ckr:Constituent](https://n-harley.github.io/chakra-ontology/#Constituent)`
+
+#### Association
+
+`[ckr:Association](https://n-harley.github.io/chakra-ontology/#Association)`
+
+#### Attribute
+
+`[ckr:Attribute](https://n-harley.github.io/chakra-ontology/#Attribute)`
+
 ### Property
 
 ## Object Properties
