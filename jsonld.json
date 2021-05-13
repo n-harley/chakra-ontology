@@ -1,6 +1,6 @@
 {
     "@context": {
-	"ch": "https://n-harley.github.io/chakra-ontology/",
+	"chakra": "https://n-harley.github.io/chakra-ontology/",
 	"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 	"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
 	"owl": "http://www.w3.org/2002/07/owl#",
@@ -9,12 +9,9 @@
 	"rdfs:range": {"@type":"@id"},
 	"subClassOf": {"@id":"rdfs:subClassOf","@type":"@id"}
     },
-    "@id": "ch:",
+    "@id": "chakra:",
     "@type": "owl:Ontology",
     "defines": [{
-	"@id": "ch:Structure",
-	"@type": "owl:Class"
-    },{
 	"@id": "ch:Constituent",
 	"@type": "owl:Class"
     },{
@@ -24,26 +21,8 @@
 	"@id": "ch:Attribute",
 	"@type": "owl:Class"
     },{
-	"@id": "ch:Aspect",
-	"@type": "owl:Class"
-    },{
-	"@id": "ch:Value",
-	"@type": "owl:Class"
-    },{
-	"@id": "ch:Type",
-	"@type": "owl:Class"
-    },{
 	"@id": "ch:Property",
 	"@type": "owl:Class"
-    },{
-	"@id": "ch:contains",
-	"@type": "owl:ObjectProperty",
-	"rdfs:domain": "ch:Structure",
-	"range": {
-	    "owl:unionOf": {
-		"@list": ["ch:Constituent","ch:Association"]
-	    }
-	}
     },{
 	"@id": "ch:hasPart",
 	"@type": "owl:ObjectProperty",
@@ -83,20 +62,5 @@
 	    }
 	},
 	"rdfs:range": "ch:Property"
-    },{
-	"@id": "ch:attributeName",
-	"@type": "owl:ObjectProperty",
-	"rdfs:domain": "ch:Attribute",
-	"rdfs:range": "ch:Aspect"
-    },{
-	"@id": "ch:attributeValue",
-	"@type": "owl:ObjectProperty",
-	"rdfs:domain": "ch:Attribute",
-	"rdfs:range": "ch:Value"
-    },{
-	"@id": "ch:hasType",
-	"@type": "owl:ObjectProperty",
-	"rdfs:domain": "ch:Value",
-	"rdfs:range": "ch:Type"
     }]
 }
