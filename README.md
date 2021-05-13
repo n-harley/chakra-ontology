@@ -2,6 +2,8 @@
 
 #### Common Hierarchical Abstract Knowledge Representation of Anything
 
+(#Classes)
+
 namespace: <https://n-harley.github.io/chakra-ontology/>
 
 prefix: "chakra"
