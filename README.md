@@ -6,14 +6,13 @@
 
 namespace: <https://n-harley.github.io/chakra-ontology/>
 prefix: chakra
-
 jsonld: [https://n-harley.github.io/chakra-ontology/jsonld](./jsonld)
 
 ## Classes
 
 #### Constituent
 
-<[chakra:Constituent](https://n-harley.github.io/chakra-ontology/#Constituent)>
+[chakra:Constituent](https://n-harley.github.io/chakra-ontology/#Constituent)
 
 #### Association
 
