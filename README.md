@@ -4,7 +4,7 @@
 
 namespace: https://n-harley.github.io/chakra-ontology/
 
-jsonld: [jsonld](json-ls.jsonld)
+jsonld: [jsonld](./json-ls.jsonld)
 
 ## Classes
 
