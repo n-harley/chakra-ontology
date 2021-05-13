@@ -3,8 +3,9 @@
 #### Common Hierarchical Abstract Knowledge Representation of Anything
 
 namespace: https://n-harley.github.io/chakra-ontology/
+prefix: "chakra"
 
-jsonld: [jsonld](./chakra-ontology.json)
+jsonld: (./jsonld)
 
 ## Classes
 
