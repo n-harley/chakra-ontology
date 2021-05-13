@@ -6,21 +6,21 @@
 
 namespace: <https://n-harley.github.io/chakra-ontology/>
 
-prefix: "chakra"
+prefix: `chakra`
 
 jsonld: [https://n-harley.github.io/chakra-ontology/jsonld](./jsonld)
 
 ## Classes
 
-- Constituent
-- Association
-- Attribute
-- Property
+### Constituent
+### Association
+### Attribute
+### Property
 
 ## Object Properties
 
-- hasAttribute
-- hasProperty
-- hasPart
-- hasSource
-- hasTarget
+### hasAttribute
+### hasProperty
+### hasPart
+### hasSource
+### hasTarget
