@@ -8,7 +8,7 @@
 | ---: | :--- |
 | namespace | <https://n-harley.github.io/chakra-ontology/> |
 | prefix | chakra: |
-| jsonld | [https://n-harley.github.io/chakra-ontology/jsonld](./jsonld.json) |
+| jsonld | <https://n-harley.github.io/chakra-ontology/json-ld-encoding.json> |
 
 ## Classes
 
@@ -41,6 +41,10 @@
 #### hasPart
 
 [chakra:hasPart](https://n-harley.github.io/chakra-ontology/#hasPart)
+
+#### isPartOf
+
+[chakra:isPartOf](https://n-harley.github.io/chakra-ontology/#isPartOf)
 
 #### hasSource
 
