@@ -4,6 +4,7 @@
 
 ## Details
 
+| --- | --- |
 | namespace | <https://n-harley.github.io/chakra-ontology/> |
 | prefix | chakra: |
 | jsonld | [https://n-harley.github.io/chakra-ontology/jsonld](./jsonld) |
