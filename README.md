@@ -8,7 +8,7 @@
 | ---: | :--- |
 | namespace | <https://n-harley.github.io/chakra-ontology/> |
 | prefix | chakra: |
-| jsonld | [https://n-harley.github.io/chakra-ontology/jsonld](./jsonld) |
+| jsonld | [https://n-harley.github.io/chakra-ontology/jsonld](./jsonld.json) |
 
 ## Classes
 
