@@ -27,23 +27,23 @@
 	"@id": "chakra:hasPart",
 	"@type": "owl:ObjectProperty",
 	"rdfs:domain": "chakra:Constituent",
-	"range": "chakra:Constituent"
+	"rdfs:range": "chakra:Constituent"
     },{
 	"@id": "chakra:isPartOf",
 	"@type": "owl:ObjectProperty",
 	"rdfs:domain": "chakra:Constituent",
-	"range": "chakra:Constituent",
+	"rdfs:range": "chakra:Constituent",
 	"owl:inverseOf": "chakra:hasPart"
     },{
 	"@id": "chakra:hasSource",
 	"@type": "owl:ObjectProperty",
 	"rdfs:domain": "chakra:Association",
-	"range": "chakra:Constituent"
+	"rdfs:range": "chakra:Constituent"
     },{
 	"@id": "chakra:hasTarget",
 	"@type": "owl:ObjectProperty",
 	"rdfs:domain": "chakra:Association",
-	"range": "chakra:Constituent"
+	"rdfs:range": "chakra:Constituent"
     },{
 	"@id": "chakra:hasAttribute",
 	"@type": "owl:ObjectProperty",
@@ -52,7 +52,7 @@
 		"@list": ["chakra:Constituent","chakra:Association"]
 	    }
 	},
-	"range": "chakra:Attribute"
+	"rdfs:range": "chakra:Attribute"
     },{
 	"@id": "chakra:hasProperty",
 	"@type": "owl:ObjectProperty",
