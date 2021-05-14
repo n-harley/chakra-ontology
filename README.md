@@ -67,7 +67,7 @@ json-ld encoding: <https://n-harley.github.io/chakra-ontology/json-ld-encoding.j
 {
   "@id": "chakra:hasAttribute",
   "@type": "owl:ObjectProperty",
-  "rdfs:domain": {owl:unionOf: {@list: ["chakra:Constituent","chakra:Association"]},
+  "rdfs:domain": {"owl:unionOf": {"@list": ["chakra:Constituent","chakra:Association"]},
   "rdfs:range" : "chakra:Attribute"
 }
 ```
