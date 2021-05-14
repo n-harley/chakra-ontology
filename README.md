@@ -2,7 +2,7 @@
 
 #### Common Hierarchical Abstract Knowledge Representation of Anything
 
-An upper ontology for for capturing complex multiple-hierarchcial systems of entities. 
+An upper ontology for for capturing complex multiple-hierarchcial systems of entities. A JSON-LD encoding can be found [here](https://n-harley.github.io/chakra-ontology/json-ld-encoding.json). A Jupyter notebook exploring the ontology can be found [here](https://nbviewer.jupyter.org/github/n-harley/chakra-ontology/blob/main/explorer.ipynb). The classes and properties of the ontology are described below.
 
 |Prefix | Namespace | 
 | ---: | :--- |
@@ -11,7 +11,7 @@ An upper ontology for for capturing complex multiple-hierarchcial systems of ent
 | `rdfs` | <http://www.w3.org/2000/01/rdf-schema#> |
 | `owl` | <http://www.w3.org/2002/07/owl#> |
 
-json-ld encoding: <https://n-harley.github.io/chakra-ontology/json-ld-encoding.json>
+
 
 ## Classes
 
