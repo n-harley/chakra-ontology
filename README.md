@@ -15,6 +15,8 @@ json-ld encoding: <https://n-harley.github.io/chakra-ontology/json-ld-encoding.j
 
 #### Constituent
 
+a representation of an entity.
+
 ##### [chakra:Constituent](https://n-harley.github.io/chakra-ontology/#Constituent)
 
 ```json
@@ -25,6 +27,8 @@ json-ld encoding: <https://n-harley.github.io/chakra-ontology/json-ld-encoding.j
 ```
 
 #### Association
+
+represents a directed relationship between entities. 
 
 ##### [chakra:Association](https://n-harley.github.io/chakra-ontology/#Association)
 
@@ -37,6 +41,8 @@ json-ld encoding: <https://n-harley.github.io/chakra-ontology/json-ld-encoding.j
 
 #### Attribute
 
+represents a named element (value) of a conceptual space. 
+
 ##### [chakra:Attribute](https://n-harley.github.io/chakra-ontology/#Attribute)
 
 ```json
@@ -47,6 +53,8 @@ json-ld encoding: <https://n-harley.github.io/chakra-ontology/json-ld-encoding.j
 ```
 
 #### Property
+
+represents a predicate on constituents.
 
 ##### [chakra:Property](https://n-harley.github.io/chakra-ontology/#Property)
 
@@ -61,6 +69,8 @@ json-ld encoding: <https://n-harley.github.io/chakra-ontology/json-ld-encoding.j
 
 #### hasAttribute
 
+identifies a constituent with an attribute.
+
 ##### [chakra:hasAttribute](https://n-harley.github.io/chakra-ontology/#hasAttribute)
 
 ```json
@@ -73,6 +83,8 @@ json-ld encoding: <https://n-harley.github.io/chakra-ontology/json-ld-encoding.j
 ```
 
 #### hasProperty
+
+identifies a consituent with a property.
 
 ##### [chakra:hasProperty](https://n-harley.github.io/chakra-ontology/#hasProperty)
 
@@ -87,6 +99,8 @@ json-ld encoding: <https://n-harley.github.io/chakra-ontology/json-ld-encoding.j
 
 #### hasPart
 
+connects a constituent to its set of parts.
+
 ##### [chakra:hasPart](https://n-harley.github.io/chakra-ontology/#hasPart)
 
 ```json
@@ -99,6 +113,8 @@ json-ld encoding: <https://n-harley.github.io/chakra-ontology/json-ld-encoding.j
 ```
 
 #### isPartOf
+
+inverso of [chakra:hasPart](https://n-harley.github.io/chakra-ontology/#hasPart)
 
 ##### [chakra:isPartOf](https://n-harley.github.io/chakra-ontology/#isPartOf)
 
@@ -113,6 +129,8 @@ json-ld encoding: <https://n-harley.github.io/chakra-ontology/json-ld-encoding.j
 
 #### hasSource
 
+identifies an association with its source constituent.
+
 ##### [chakra:hasSource](https://n-harley.github.io/chakra-ontology/#hasSource)
 
 ```json
@@ -126,6 +144,8 @@ json-ld encoding: <https://n-harley.github.io/chakra-ontology/json-ld-encoding.j
 
 #### hasTarget
 
+identifies an association with its target constituent.
+
 ##### [chakra:hasTarget](https://n-harley.github.io/chakra-ontology/#hasTarget)
 
 ```json
@@ -136,5 +156,3 @@ json-ld encoding: <https://n-harley.github.io/chakra-ontology/json-ld-encoding.j
   "rdfs:range": "chakra:Constituent"
 }
 ```
-
-
