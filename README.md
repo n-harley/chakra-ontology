@@ -4,7 +4,6 @@
 
 ## Details
 
-| | |
 | ---: | :--- |
 | namespace | <https://n-harley.github.io/chakra-ontology/> |
 | prefix | chakra: |
