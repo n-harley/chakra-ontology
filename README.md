@@ -15,7 +15,7 @@ json-ld encoding: <https://n-harley.github.io/chakra-ontology/json-ld-encoding.j
 
 #### Constituent
 
-##### <https://n-harley.github.io/chakra-ontology/#Constituent>
+###### <https://n-harley.github.io/chakra-ontology/#Constituent>
 
 An instance of [chakra:Constituent](https://n-harley.github.io/chakra-ontology/#Constituent) represents an entity.
 
@@ -28,7 +28,7 @@ An instance of [chakra:Constituent](https://n-harley.github.io/chakra-ontology/#
 
 #### Association
 
-##### <https://n-harley.github.io/chakra-ontology/#Association>
+###### <https://n-harley.github.io/chakra-ontology/#Association>
 
 An instance of an [chakra:Association](https://n-harley.github.io/chakra-ontology/#Association) represents a directed relationship between instances of [chakra:Constituent](https://n-harley.github.io/chakra-ontology/#Constituent). 
 
@@ -41,7 +41,7 @@ An instance of an [chakra:Association](https://n-harley.github.io/chakra-ontolog
 
 #### Attribute
 
-##### <https://n-harley.github.io/chakra-ontology/#Attribute>
+###### <https://n-harley.github.io/chakra-ontology/#Attribute>
 
 An instance of [chakra:Attribute](https://n-harley.github.io/chakra-ontology/#Attribute) represents a named element (value) of a conceptual space. 
 
@@ -54,9 +54,10 @@ An instance of [chakra:Attribute](https://n-harley.github.io/chakra-ontology/#At
 
 #### Property
 
-represents a predicate on constituents.
+###### <https://n-harley.github.io/chakra-ontology/#Property>
 
-##### [chakra:Property](https://n-harley.github.io/chakra-ontology/#Property)
+An instance of [chakra:Property](https://n-harley.github.io/chakra-ontology/#Property) represents a predicate on instances of [chakra:Constituent](https://n-harley.github.io/chakra-ontology/#Constituent).
+
 
 ```json
 {
@@ -69,9 +70,10 @@ represents a predicate on constituents.
 
 #### hasAttribute
 
-identifies a constituent with an attribute.
+###### <https://n-harley.github.io/chakra-ontology/#hasAttribute>
 
-##### [chakra:hasAttribute](https://n-harley.github.io/chakra-ontology/#hasAttribute)
+An instance of [chakra:hasAttribute](https://n-harley.github.io/chakra-ontology/#hasAttribute) links an instance of [chakra:Constituent](https://n-harley.github.io/chakra-ontology/#Constituent) with an instance of [chakra:Attribute](https://n-harley.github.io/chakra-ontology/#Attribtue).
+
 
 ```json
 {
@@ -84,9 +86,9 @@ identifies a constituent with an attribute.
 
 #### hasProperty
 
-identifies a consituent with a property.
+###### <https://n-harley.github.io/chakra-ontology/#hasProperty>
 
-##### [chakra:hasProperty](https://n-harley.github.io/chakra-ontology/#hasProperty)
+An instance of [chakra:hasProperty](https://n-harley.github.io/chakra-ontology/#hasProperty) links an instance of [chakra:Constituent](https://n-harley.github.io/chakra-ontology/#Constituent) with an instance of [chakra:Property](https://n-harley.github.io/chakra-ontology/#Property).
 
 ```json
 {
@@ -99,9 +101,9 @@ identifies a consituent with a property.
 
 #### hasPart
 
-connects a constituent to its set of parts.
+###### <https://n-harley.github.io/chakra-ontology/#hasPart>
 
-##### [chakra:hasPart](https://n-harley.github.io/chakra-ontology/#hasPart)
+An instance of [chakra:hasPart](https://n-harley.github.io/chakra-ontology/#hasPart) links an instance of [chakra:Constituent](https://n-harley.github.io/chakra-ontology/#Constituent) other instances of [chakra:Constituent](https://n-harley.github.io/chakra-ontology/#Constituent).
 
 ```json
 {
@@ -114,10 +116,9 @@ connects a constituent to its set of parts.
 
 #### isPartOf
 
-inverso of [chakra:hasPart](https://n-harley.github.io/chakra-ontology/#hasPart)
+###### <https://n-harley.github.io/chakra-ontology/#isPartOf>
 
-##### [chakra:isPartOf](https://n-harley.github.io/chakra-ontology/#isPartOf)
-
+An instance of [chakra:isPartOf](https://n-harley.github.io/chakra-ontology/#isPartOf) links an instance of [chakra:Constituent](https://n-harley.github.io/chakra-ontology/#Constituent) with an instance of [chakra:Constituent](https://n-harley.github.io/chakra-ontology/#Constituent).
 ```json
 {
   "@id": "chakra:isPartOf",
@@ -129,9 +130,9 @@ inverso of [chakra:hasPart](https://n-harley.github.io/chakra-ontology/#hasPart)
 
 #### hasSource
 
-identifies an association with its source constituent.
+###### <https://n-harley.github.io/chakra-ontology/#hasSource>
 
-##### [chakra:hasSource](https://n-harley.github.io/chakra-ontology/#hasSource)
+An instance of [chakra:hasSource](https://n-harley.github.io/chakra-ontology/#hasSource) links an instance of [chakra:Association](https://n-harley.github.io/chakra-ontology/#Association) with the instance of [chakra:Constituent](https://n-harley.github.io/chakra-ontology/#Constituent) which is the source.
 
 ```json
 {
@@ -144,9 +145,9 @@ identifies an association with its source constituent.
 
 #### hasTarget
 
-identifies an association with its target constituent.
+###### <https://n-harley.github.io/chakra-ontology/#hasTarget>
 
-##### [chakra:hasTarget](https://n-harley.github.io/chakra-ontology/#hasTarget)
+An instance of [chakra:hasTarget](https://n-harley.github.io/chakra-ontology/#hasTarget) links an instance of [chakra:Association](https://n-harley.github.io/chakra-ontology/#Association) with the instance of [chakra:Constituent](https://n-harley.github.io/chakra-ontology/#Constituent) which is the target.
 
 ```json
 {
