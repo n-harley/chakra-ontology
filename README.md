@@ -48,7 +48,7 @@ json-ld encoding: <https://n-harley.github.io/chakra-ontology/json-ld-encoding.j
 
 #### Property
 
-[chakra:Property](https://n-harley.github.io/chakra-ontology/#Property)
+##### [chakra:Property](https://n-harley.github.io/chakra-ontology/#Property)
 
 ```json
 {
@@ -61,79 +61,79 @@ json-ld encoding: <https://n-harley.github.io/chakra-ontology/json-ld-encoding.j
 
 #### hasAttribute
 
-[chakra:hasAttribute](https://n-harley.github.io/chakra-ontology/#hasAttribute)
+##### [chakra:hasAttribute](https://n-harley.github.io/chakra-ontology/#hasAttribute)
 
 ```json
 {
-  @id: "chakra:hasAttribute",
-  @type: "owl:ObjectProperty",
-  rdfs:domain: {owl:unionOf: {@list: ["chakra:Constituent","chakra:Association"]},
-  rdfs:range: "chakra:Attribute"
+  "@id": "chakra:hasAttribute",
+  "@type": "owl:ObjectProperty",
+  "rdfs:domain": {owl:unionOf: {@list: ["chakra:Constituent","chakra:Association"]},
+  "rdfs:range" : "chakra:Attribute"
 }
 ```
 
 #### hasProperty
 
-[chakra:hasProperty](https://n-harley.github.io/chakra-ontology/#hasProperty)
+##### [chakra:hasProperty](https://n-harley.github.io/chakra-ontology/#hasProperty)
 
 ```json
 {
-  @id: "chakra:hasProperty",
-  @type: "owl:ObjectProperty",
-  rdfs:domain: {owl:unionOf: {@list: ["chakra:Constituent","chakra:Association"]},
-  rdfs:range: "chakra:Property"
+  "@id": "chakra:hasProperty",
+  "@type": "owl:ObjectProperty",
+  "rdfs:domain": {"owl:unionOf": {"@list": ["chakra:Constituent","chakra:Association"]},
+  "rdfs:range": "chakra:Property"
 }
 ```
 
 #### hasPart
 
-[chakra:hasPart](https://n-harley.github.io/chakra-ontology/#hasPart)
+##### [chakra:hasPart](https://n-harley.github.io/chakra-ontology/#hasPart)
 
 ```json
 {
-  @id: "chakra:hasPart",
-  @type: "owl:ObjectProperty",
-  rdfs:domain: "chakra:Constituent",
-  range: "chakra:Constituent"
+  "@id": "chakra:hasPart",
+  "@type": "owl:ObjectProperty",
+  "rdfs:domain": "chakra:Constituent",
+  "rdfs:range": "chakra:Constituent"
 }
 ```
 
 #### isPartOf
 
-[chakra:isPartOf](https://n-harley.github.io/chakra-ontology/#isPartOf)
+##### [chakra:isPartOf](https://n-harley.github.io/chakra-ontology/#isPartOf)
 
 ```json
 {
-  @id: "chakra:isPartOf",
-  @type: "owl:ObjectProperty",
-  rdfs:domain: "chakra:Constituent",
-  range: "chakra:Constituent"
+  "@id": "chakra:isPartOf",
+  "@type": "owl:ObjectProperty",
+  "rdfs:domain": "chakra:Constituent",
+  "rdfs:range": "chakra:Constituent"
 }
 ```
 
 #### hasSource
 
-[chakra:hasSource](https://n-harley.github.io/chakra-ontology/#hasSource)
+##### [chakra:hasSource](https://n-harley.github.io/chakra-ontology/#hasSource)
 
 ```json
 {
-  @id: "chakra:hasSource",
-  @type: "owl:ObjectProperty",
-  rdfs:domain: "chakra:Association",
-  range: "chakra:Constituent"
+  "@id": "chakra:hasSource",
+  "@type": "owl:ObjectProperty",
+  "rdfs:domain": "chakra:Association",
+  "rdfs:range": "chakra:Constituent"
 }
 ```
 
 #### hasTarget
 
-[chakra:hasTarget](https://n-harley.github.io/chakra-ontology/#hasTarget)
+##### [chakra:hasTarget](https://n-harley.github.io/chakra-ontology/#hasTarget)
 
 ```json
 {
-  @id: "chakra:hasTarget",
-  @type: "owl:ObjectProperty",
-  rdfs:domain: "chakra:Association",
-  range: "chakra:Constituent"
+  "@id": "chakra:hasTarget",
+  "@type": "owl:ObjectProperty",
+  "rdfs:domain": "chakra:Association",
+  "rdfs:range": "chakra:Constituent"
 }
 ```
 
