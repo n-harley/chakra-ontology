@@ -3,11 +3,15 @@
 #### Common Hierarchical Abstract Knowledge Representation of Anything
 
 ## Details
-|Details | | 
+
+|Prefix | Namespace | 
 | ---: | :--- |
-| namespace | <https://n-harley.github.io/chakra-ontology/> |
-| prefix | chakra: |
-| jsonld | <https://n-harley.github.io/chakra-ontology/json-ld-encoding.json> |
+| `chakra` | <https://n-harley.github.io/chakra-ontology/> |
+| `rdf` | <http://www.w3.org/1999/02/22-rdf-syntax-ns#> |
+| `rdfs` | <http://www.w3.org/2000/01/rdf-schema#> |
+| `owl` | <http://www.w3.org/2002/07/owl#> |
+
+json-ld encoding: <https://n-harley.github.io/chakra-ontology/json-ld-encoding.json> |
 
 ## Classes
 
