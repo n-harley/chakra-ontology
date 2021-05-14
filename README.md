@@ -9,15 +9,15 @@
 | `rdfs` | <http://www.w3.org/2000/01/rdf-schema#> |
 | `owl` | <http://www.w3.org/2002/07/owl#> |
 
-json-ld encoding: <https://n-harley.github.io/chakra-ontology/json-ld-encoding.json> |
+json-ld encoding: <https://n-harley.github.io/chakra-ontology/json-ld-encoding.json>
 
 ## Classes
 
 #### Constituent
 
-a representation of an entity.
+##### <https://n-harley.github.io/chakra-ontology/#Constituent>
 
-##### [chakra:Constituent](https://n-harley.github.io/chakra-ontology/#Constituent)
+An instance of [chakra:Constituent](https://n-harley.github.io/chakra-ontology/#Constituent) represents an entity.
 
 ```json
 {
@@ -28,9 +28,9 @@ a representation of an entity.
 
 #### Association
 
-represents a directed relationship between entities. 
+##### <https://n-harley.github.io/chakra-ontology/#Association>
 
-##### [chakra:Association](https://n-harley.github.io/chakra-ontology/#Association)
+An instance of an [chakra:Association](https://n-harley.github.io/chakra-ontology/#Association) represents a directed relationship between instances of [chakra:Constituent](https://n-harley.github.io/chakra-ontology/#Constituent). 
 
 ```json
 {
@@ -41,9 +41,9 @@ represents a directed relationship between entities.
 
 #### Attribute
 
-represents a named element (value) of a conceptual space. 
+##### <https://n-harley.github.io/chakra-ontology/#Attribute>
 
-##### [chakra:Attribute](https://n-harley.github.io/chakra-ontology/#Attribute)
+An instance of [chakra:Attribute](https://n-harley.github.io/chakra-ontology/#Attribute) represents a named element (value) of a conceptual space. 
 
 ```json
 {
