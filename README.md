@@ -13,15 +13,36 @@
 
 #### Constituent
 
-[chakra:Constituent](https://n-harley.github.io/chakra-ontology/#Constituent)
+##### [chakra:Constituent](https://n-harley.github.io/chakra-ontology/#Constituent)
+
+```json
+{
+  "@id": "https://n-harley.github.io/chakra-ontology/#Constituent",
+  "@type": "owl:Class"
+}
+```
 
 #### Association
 
-[chakra:Association](https://n-harley.github.io/chakra-ontology/#Association)
+##### [chakra:Association](https://n-harley.github.io/chakra-ontology/#Association)
+
+```json
+{
+  "@id": "https://n-harley.github.io/chakra-ontology/#Association",
+  "@type": "owl:Class"
+}
+```
 
 #### Attribute
 
-[chakra:Attribute](https://n-harley.github.io/chakra-ontology/#Attribute)
+##### [chakra:Attribute](https://n-harley.github.io/chakra-ontology/#Attribute)
+
+```json
+{
+  "@id": "https://n-harley.github.io/chakra-ontology/#Attribute",
+  "@type": "owl:Class"
+}
+```
 
 #### Property
 
