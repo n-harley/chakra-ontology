@@ -33,7 +33,7 @@ An instance of [chakra:Constituent](https://n-harley.github.io/chakra-ontology/#
 
 #### <https://n-harley.github.io/chakra-ontology/#Association>
 
-An instance of an [chakra:Association](https://n-harley.github.io/chakra-ontology/#Association) represents a directed relationship between instances of [chakra:Constituent](https://n-harley.github.io/chakra-ontology/#Constituent). 
+An instance of an [chakra:Association](https://n-harley.github.io/chakra-ontology/#Association) represents a directed relationship between instances of [chakra:Constituent](#Constituent). 
 
 ```json
 {
@@ -150,7 +150,7 @@ An instance of [chakra:hasSource](https://n-harley.github.io/chakra-ontology/#ha
 
 #### <https://n-harley.github.io/chakra-ontology/#hasTarget>
 
-An instance of [chakra:hasTarget](https://n-harley.github.io/chakra-ontology/#hasTarget) links an instance of [chakra:Association](https://n-harley.github.io/chakra-ontology/#Association) with the instance of [chakra:Constituent](https://n-harley.github.io/chakra-ontology/#Constituent) which is the target.
+An instance of [chakra:hasTarget](https://n-harley.github.io/chakra-ontology/#hasTarget) links an instance of [chakra:Association](https://n-harley.github.io/chakra-ontology/#Association) with the instance of [chakra:Constituent](#Constituent) which is the target.
 
 ```json
 {
