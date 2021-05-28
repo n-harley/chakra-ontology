@@ -150,7 +150,7 @@ An instance of [chakra:hasSource](https://n-harley.github.io/chakra-ontology/#ha
 
 #### <https://n-harley.github.io/chakra-ontology/#hasTarget>
 
-An instance of [hasTarget][] links an instance of [Association][] with the instance of [Constituent][] which is the target.
+An instance of [hasTarget](#hastarget) links an instance of [Association][#association] with the instance of [Constituent][#constituent] which is the target.
 
 ```json
 {
