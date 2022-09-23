@@ -1,13 +1,10 @@
----
-layout: page
-title: Common Hierarchical Abstract Knowledge Representation of Anything
---- 
+# The Chakra Ontology
 
-An upper ontology for for capturing complex multiple-hierarchcial systems of entities. A JSON-LD encoding can be found [here](https://n-harley.github.io/chakra-ontology/json-ld-encoding.json). A Jupyter notebook exploring the ontology can be found [here](https://nbviewer.jupyter.org/github/n-harley/chakra-ontology/blob/main/explorer.ipynb). The classes and properties of the ontology are described below.
+An upper ontology for for capturing complex multiple-hierarchcial systems of entities. A JSON-LD encoding can be found [here](https://nick-harley.github.io/chakra-ontology/jsonld.json). A Jupyter notebook exploring the ontology can be found [here](https://nbviewer.jupyter.org/github/nick-harley/chakra-ontology/blob/main/explorer.ipynb). The classes and properties of the ontology are described below.
 
 |Prefix | Namespace | 
 | ---: | :--- |
-| `chakra` | <https://n-harley.github.io/chakra-ontology/> |
+| `chakra` | <https://nick-harley.github.io/chakra-ontology#> |
 | `rdf` | <http://www.w3.org/1999/02/22-rdf-syntax-ns#> |
 | `rdfs` | <http://www.w3.org/2000/01/rdf-schema#> |
 | `owl` | <http://www.w3.org/2002/07/owl#> |
@@ -16,11 +13,20 @@ An upper ontology for for capturing complex multiple-hierarchcial systems of ent
 
 ## Classes
 
+### Structure
+
+#### <https://nick-harley.github.io/chakra-ontology#Structure>
+
+```json
+{
+  "@id": "chakra:Structure",
+  "@type": "owl:Class"
+}
+```
+
 ### Constituent
 
-#### <https://n-harley.github.io/chakra-ontology/#Constituent>
-
-An instance of [chakra:Constituent](https://n-harley.github.io/chakra-ontology/#Constituent) represents an entity.
+#### <https://nick-harley.github.io/chakra-ontology#Constituent>
 
 ```json
 {
@@ -29,24 +35,9 @@ An instance of [chakra:Constituent](https://n-harley.github.io/chakra-ontology/#
 }
 ```
 
-### Association
-
-#### <https://n-harley.github.io/chakra-ontology/#Association>
-
-An instance of an [chakra:Association](https://n-harley.github.io/chakra-ontology/#Association) represents a directed relationship between instances of [chakra:Constituent](#Constituent). 
-
-```json
-{
-  "@id": "chakra:Association",
-  "@type": "owl:Class"
-}
-```
-
 ### Attribute
 
-#### <https://n-harley.github.io/chakra-ontology/#Attribute>
-
-An instance of [chakra:Attribute](https://n-harley.github.io/chakra-ontology/#Attribute) represents a named element (value) of a conceptual space. 
+#### <https://nick-harley.github.io/chakra-ontology#Attribute>
 
 ```json
 {
@@ -57,10 +48,7 @@ An instance of [chakra:Attribute](https://n-harley.github.io/chakra-ontology/#At
 
 ### Property
 
-#### <https://n-harley.github.io/chakra-ontology/#Property>
-
-An instance of [chakra:Property](https://n-harley.github.io/chakra-ontology/#Property) represents a predicate on instances of [chakra:Constituent](https://n-harley.github.io/chakra-ontology/#Constituent).
-
+#### <https://nick-harley.github.io/chakra-ontology#Property>
 
 ```json
 {
@@ -73,40 +61,67 @@ An instance of [chakra:Property](https://n-harley.github.io/chakra-ontology/#Pro
 
 ### hasAttribute
 
-#### <https://n-harley.github.io/chakra-ontology/#hasAttribute>
-
-An instance of [chakra:hasAttribute](https://n-harley.github.io/chakra-ontology/#hasAttribute) links an instance of [chakra:Constituent](https://n-harley.github.io/chakra-ontology/#Constituent) with an instance of [chakra:Attribute](https://n-harley.github.io/chakra-ontology/#Attribtue).
-
+#### <https://nick-harley.github.io/chakra-ontology#hasAttribute>
 
 ```json
 {
   "@id": "chakra:hasAttribute",
   "@type": "owl:ObjectProperty",
-  "rdfs:domain": {"owl:unionOf": {"@list": ["chakra:Constituent","chakra:Association"]},
+  "rdfs:domain": {
+    "owl:unionOf": {
+	  "@list": ["chakra:Constituent","chakra:Association"]
+	}
+  },
   "rdfs:range" : "chakra:Attribute"
 }
 ```
 
 ### hasProperty
 
-#### <https://n-harley.github.io/chakra-ontology/#hasProperty>
-
-An instance of [chakra:hasProperty](https://n-harley.github.io/chakra-ontology/#hasProperty) links an instance of [chakra:Constituent](https://n-harley.github.io/chakra-ontology/#Constituent) with an instance of [chakra:Property](https://n-harley.github.io/chakra-ontology/#Property).
+#### <https://nick-harley.github.io/chakra-ontology#hasProperty>
 
 ```json
 {
   "@id": "chakra:hasProperty",
   "@type": "owl:ObjectProperty",
-  "rdfs:domain": {"owl:unionOf": {"@list": ["chakra:Constituent","chakra:Association"]},
+  "rdfs:domain": {
+    "owl:unionOf": {
+	  "@list": ["chakra:Constituent","chakra:Association"]
+    },
+  }
   "rdfs:range": "chakra:Property"
+}
+```
+
+### constituents
+
+#### <https://nick-harley.github.io/chakra-ontology#constituents>
+
+```json
+{
+  "@id": "chakra:constituents",
+  "@type": "owl:ObjectProperty",
+  "rdfs:domain": "chakra:Structure",
+  "rdfs:range": "rdf:List"
+}
+```
+
+### particles
+
+#### <https://nick-harley.github.io/chakra-ontology#particles>
+
+```json
+{
+  "@id": "chakra:particles",
+  "@type": "owl:ObjectProperty",
+  "rdfs:domain": "chakra:Constituent",
+  "rdfs:range": "rdf:List"
 }
 ```
 
 ### hasPart
 
-#### <https://n-harley.github.io/chakra-ontology/#hasPart>
-
-An instance of [chakra:hasPart](https://n-harley.github.io/chakra-ontology/#hasPart) links an instance of [chakra:Constituent](https://n-harley.github.io/chakra-ontology/#Constituent) other instances of [chakra:Constituent](https://n-harley.github.io/chakra-ontology/#Constituent).
+#### <https://nick-harley.github.io/chakra-ontology#hasPart>
 
 ```json
 {
@@ -119,44 +134,13 @@ An instance of [chakra:hasPart](https://n-harley.github.io/chakra-ontology/#hasP
 
 ### isPartOf
 
-#### <https://n-harley.github.io/chakra-ontology/#isPartOf>
+#### <https://nick-harley.github.io/chakra-ontology#isPartOf>
 
-An instance of [chakra:isPartOf](https://n-harley.github.io/chakra-ontology/#isPartOf) links an instance of [chakra:Constituent](https://n-harley.github.io/chakra-ontology/#Constituent) with an instance of [chakra:Constituent](https://n-harley.github.io/chakra-ontology/#Constituent).
 ```json
 {
   "@id": "chakra:isPartOf",
   "@type": "owl:ObjectProperty",
   "rdfs:domain": "chakra:Constituent",
-  "rdfs:range": "chakra:Constituent"
-}
-```
-
-### hasSource
-
-#### <https://n-harley.github.io/chakra-ontology/#hasSource>
-
-An instance of [chakra:hasSource](https://n-harley.github.io/chakra-ontology/#hasSource) links an instance of [chakra:Association](https://n-harley.github.io/chakra-ontology/#Association) with the instance of [chakra:Constituent](https://n-harley.github.io/chakra-ontology/#Constituent) which is the source.
-
-```json
-{
-  "@id": "chakra:hasSource",
-  "@type": "owl:ObjectProperty",
-  "rdfs:domain": "chakra:Association",
-  "rdfs:range": "chakra:Constituent"
-}
-```
-
-### hasTarget
-
-#### <https://n-harley.github.io/chakra-ontology/#hasTarget>
-
-An instance of [hasTarget](#hasTarget) links an instance of [Association](#Association) with the instance of [Constituent](#Constituent) which is the target.
-
-```json
-{
-  "@id": "chakra:hasTarget",
-  "@type": "owl:ObjectProperty",
-  "rdfs:domain": "chakra:Association",
   "rdfs:range": "chakra:Constituent"
 }
 ```

@@ -1,6 +1,6 @@
 {
     "@context": {
-	"chakra": "https://n-harley.github.io/chakra-ontology/#",
+	"chakra": "https://nick-harley.github.io/chakra-ontology#",
 	"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
 	"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
 	"owl": "http://www.w3.org/2002/07/owl#",
@@ -13,10 +13,10 @@
     "@id": "chakra:",
     "@type": "owl:Ontology",
     "defines": [{
-	"@id": "chakra:Constituent",
+	"@id": "chakra:Structure",
 	"@type": "owl:Class"
     },{
-	"@id": "chakra:Association",
+	"@id": "chakra:Constituent",
 	"@type": "owl:Class"
     },{
 	"@id": "chakra:Attribute",
@@ -36,32 +36,40 @@
 	"rdfs:range": "chakra:Constituent",
 	"owl:inverseOf": "chakra:hasPart"
     },{
-	"@id": "chakra:hasSource",
-	"@type": "owl:ObjectProperty",
-	"rdfs:domain": "chakra:Association",
-	"rdfs:range": "chakra:Constituent"
-    },{
-	"@id": "chakra:hasTarget",
-	"@type": "owl:ObjectProperty",
-	"rdfs:domain": "chakra:Association",
-	"rdfs:range": "chakra:Constituent"
-    },{
 	"@id": "chakra:hasAttribute",
 	"@type": "owl:ObjectProperty",
-	"rdfs:domain": {
-	    "owl:unionOf": {
-		"@list": ["chakra:Constituent","chakra:Association"]
-	    }
-	},
+	"rdfs:domain": "chakra:Constituent",
 	"rdfs:range": "chakra:Attribute"
     },{
 	"@id": "chakra:hasProperty",
 	"@type": "owl:ObjectProperty",
+	"rdfs:domain": "chakra:Constituent",
+	"rdfs:range": "chakra:Property"
+    },{
+	"@id": "chakra:name",
+	"@type": "owl:DatatypeProperty",
 	"rdfs:domain": {
 	    "owl:unionOf": {
-		"@list": ["chakra:Constituent","chakra:Association"]
+		"@list": ["chakra:Attribute","chakra:Property"]
 	    }
-	},
-	"rdfs:range": "chakra:Property"
+	}
+    },{
+	"@id": "chakra:value",
+	"@type": "owl:DatatypeProperty",
+	"rdfs:domain": {
+	    "owl:unionOf": {
+		"@list": ["chakra:Attribute","chakra:Property"]
+	    }
+	}
+    },{
+	"@id": "chakra:particles",
+	"@type": "owl:ObjectProperty",
+	"rdfs:domain": "chakra:Constituent",
+	"rdfs:range": "rdf:List"
+    },{
+	"@id": "chakra:constituents",
+	"@type": "owl:ObjectProperty",
+	"rdfs:domain": "chakra:Structure",
+	"rdfs:range": "rdf:List"
     }]
 }
