@@ -1,7 +1,5 @@
 # The Chakra Ontology
 
-An upper ontology for for capturing complex multiple-hierarchcial systems of entities. A JSON-LD encoding can be found [here](https://nick-harley.github.io/chakra-ontology/jsonld). A Jupyter notebook exploring the ontology can be found [here](https://nbviewer.jupyter.org/github/nick-harley/chakra-ontology/blob/main/explorer.ipynb). The classes and properties of the ontology are described below.
-
 |Prefix | Namespace | 
 | ---: | :--- |
 | `chakra` | <https://nick-harley.github.io/chakra-ontology#> |
