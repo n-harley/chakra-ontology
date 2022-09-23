@@ -132,7 +132,7 @@ An upper ontology for for capturing complex multiple-hierarchcial systems of ent
 }
 ```
 
-### isPartOf[isPartOf]
+### isPartOf<a name="isPartOf"></a>
 
 #### <https://nick-harley.github.io/chakra-ontology#isPartOf>
 
