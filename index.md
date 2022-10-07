@@ -11,13 +11,13 @@
 
 ## Classes
 
-### Structure
+### Hierarchy
 
-#### <https://nick-harley.github.io/chakra-ontology#Structure>
+#### <https://nick-harley.github.io/chakra-ontology#Hierarchy>
 
 ```json
 {
-  "@id": "chakra:Structure",
+  "@id": "chakra:Hierarchy",
   "@type": "owl:Class"
 }
 ```
@@ -99,7 +99,7 @@
 {
   "@id": "chakra:constituents",
   "@type": "owl:ObjectProperty",
-  "rdfs:domain": "chakra:Structure",
+  "rdfs:domain": "chakra:Hierarchy",
   "rdfs:range": "rdf:List"
 }
 ```

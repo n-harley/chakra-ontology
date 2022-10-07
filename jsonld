@@ -13,7 +13,7 @@
     "@id": "chakra:",
     "@type": "owl:Ontology",
     "defines": [{
-	"@id": "chakra:Structure",
+	"@id": "chakra:Hierarchy",
 	"@type": "owl:Class"
     },{
 	"@id": "chakra:Constituent",
@@ -25,16 +25,15 @@
 	"@id": "chakra:Property",
 	"@type": "owl:Class"
     },{
-	"@id": "chakra:hasPart",
+	"@id": "chakra:particles",
 	"@type": "owl:ObjectProperty",
 	"rdfs:domain": "chakra:Constituent",
-	"rdfs:range": "chakra:Constituent"
+	"rdfs:range": "rdf:List"
     },{
-	"@id": "chakra:isPartOf",
+	"@id": "chakra:constituents",
 	"@type": "owl:ObjectProperty",
-	"rdfs:domain": "chakra:Constituent",
-	"rdfs:range": "chakra:Constituent",
-	"owl:inverseOf": "chakra:hasPart"
+	"rdfs:domain": "chakra:Hierarchy",
+	"rdfs:range": "rdf:List"
     },{
 	"@id": "chakra:hasAttribute",
 	"@type": "owl:ObjectProperty",
@@ -45,6 +44,17 @@
 	"@type": "owl:ObjectProperty",
 	"rdfs:domain": "chakra:Constituent",
 	"rdfs:range": "chakra:Property"
+    },{
+	"@id": "chakra:hasPart",
+	"@type": "owl:ObjectProperty",
+	"rdfs:domain": "chakra:Constituent",
+	"rdfs:range": "chakra:Constituent"
+    },{
+	"@id": "chakra:isPartOf",
+	"@type": "owl:ObjectProperty",
+	"rdfs:domain": "chakra:Constituent",
+	"rdfs:range": "chakra:Constituent",
+	"owl:inverseOf": "chakra:hasPart"
     },{
 	"@id": "chakra:name",
 	"@type": "owl:DatatypeProperty",
@@ -61,15 +71,5 @@
 		"@list": ["chakra:Attribute","chakra:Property"]
 	    }
 	}
-    },{
-	"@id": "chakra:particles",
-	"@type": "owl:ObjectProperty",
-	"rdfs:domain": "chakra:Constituent",
-	"rdfs:range": "rdf:List"
-    },{
-	"@id": "chakra:constituents",
-	"@type": "owl:ObjectProperty",
-	"rdfs:domain": "chakra:Structure",
-	"rdfs:range": "rdf:List"
     }]
 }
